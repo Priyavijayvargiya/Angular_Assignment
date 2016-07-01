@@ -594,7 +594,7 @@ img.alignright{
 }
 .btn-add-cart .icon:before{
   content: ' ';
-  background-image: url("../images/cart-icon.png");
+  background-image: url("../assest/cart-icon.png");
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -729,7 +729,7 @@ img.alignright{
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   z-index: 2;
-  background-image: url('../images/eye-icon.png');
+  background-image: url('../assest/eye-icon.png');
   background-repeat: no-repeat;
   background-position: center center;
   font-size: 0;
@@ -744,25 +744,25 @@ img.alignright{
 .products .btn-add-comparre{
   width: 17px;
   height: 34px;
-  background: url('../images/compare-icon.png') no-repeat left center;
+  background: url('../assest/compare-icon.png') no-repeat left center;
   font-size: 0px;
   float: left;
   margin-right: 15px;
 }
 
 .products .btn-add-comparre:hover{
-  background: url('../images/compare-icon.png') no-repeat right;
+  background: url('../assest/compare-icon.png') no-repeat right;
 }
 .products .btn-add-wishlist{
   width: 19px;
   height: 34px;
-  background: url('../images/wishlist-icon.png') no-repeat left center;
+  background: url('../assest/wishlist-icon.png') no-repeat left center;
   font-size: 0px;
   float: left;
   margin-right: 15px;
 }
 .products .btn-add-wishlist:hover{
-  background: url('../images/wishlist-icon.png') no-repeat right;
+  background: url('../assest/wishlist-icon.png') no-repeat right;
 }
 .products .btn-add-cart{
   margin-top: 0;

@@ -4,6 +4,12 @@ app.config(['$routeProvider', function($routeProvider) {
 	$routeProvider.
 		when('/', {
 		   templateUrl: 'views/login.html',
-		   controller:'loginController'
+		   controller:'loginControllor'
+		}).
+		when('/home', {
+		   templateUrl: 'views/home.html'
+		}).
+		when('/registration', {
+		   templateUrl: 'views/registration.html'
 		})
 }]);

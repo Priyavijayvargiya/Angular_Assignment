@@ -1,4 +1,4 @@
-	<div class="container" ng-controller="loginController">
+	<div class="container"  ng-controller="loginControllor">
 	  <div class="row">
 			<div class="block block-breadcrumbs">
 				<ul>
@@ -16,34 +16,36 @@
 		            	<div class="box-border">
 		            		<h4>Create an account</h4>
 							<small>By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.</small>
-	            			
 	            			<p class="margin-top-10">
-	            				<a href="registration.html"><button class="button"><i class="fa fa-user"></i> Register</button></a>
+	            				<button class="button" ng-click="registration()"><i class="fa fa-user"></i> Register</button>
 	            			</p>
 		            	</div>
 		            	</div>
 		            	<div class="col-sm-6">
+                        <form  name='loginForm' ng-submit="login()" novalidate>
 		            		<div class="box-border">
 		            			<h4>Already registered?</h4>
 		            			<p>
 		            				<label>Email address</label>
-		            				<input type="text">
+		            				<input type="text" name="email" ng-model="email" required>
+                                    <span ng-show="loginForm.email.$dirty && loginForm.email.$invalid">Enter a valid Email ID!</span>
 		            			</p>
 		            			<p>
 		            				<label>Password</label>
-		            				<input type="text">
+		            				<input type="password" name="password" ng-model="password" required>
+                                    <span ng-show="loginForm.password.$dirty && loginForm.password.$invalid">Enter a valid Password!</span>
 		            			</p>
 		            			<p>
 		            				<a href="#">Forgot your password?</a>
 		            			</p>
 		            			<p>
-		            				<a href="index.html"><button class="button"><i class="fa fa-lock"></i> Sign in</button></a>
+                                	<input type="submit" value="Submit" class=" fa fa-lock button" />
 		            			</p>
 		            		</div>
+                            </form>
 		            	</div>
 		            </div>
 		        </div>
 			</div>
 		</div>
-
 	</div>

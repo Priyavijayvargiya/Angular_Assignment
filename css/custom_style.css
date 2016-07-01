@@ -1,9 +1,19 @@
 @charset "utf-8";
 /* CSS Document */
-
+.checkout-page {
+    margin-top: 15px;
+    float: left; 
+    width: 50%;
+}
 .advanced-search .search-input>input {
 	width: 100%;
 	border-radius: 30px;
+}
+button, html input[type=button], input[type=reset], input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
 }
 .cart-icon {
 	width: 14px;
